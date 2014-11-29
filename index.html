@@ -1,0 +1,78 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <title>Spootnique</title>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.min.js'></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery-backstretch/2.0.4/jquery.backstretch.min.js'></script>
+    <script type='text/javascript'>
+        $(document).ready(function() {
+            $.backstretch([
+                "https://i.imgur.com/eSq3gQz.jpg"
+            ], {
+                fade: 750
+            });
+		$('.info-about').on('click', function() {
+		    $('.info-container').slideDown();
+		});
+		$('.info-container').on('click', function() {
+		    $('.info-container').slideUp();
+		});
+        });
+
+    </script>
+    <style type='text/css'>
+        @import url(https://fonts.googleapis.com/css?family=Roboto&subset=latin,cyrillic);
+        .logo {
+            color: white;
+            font-family: 'Roboto', sans-serif;
+        }
+		* {
+		   color:white;
+		   font-family: 'Roboto', sans-serif;
+		}
+        .container {
+            width: 300px;
+            margin-left: auto;
+            margin-right: auto;
+			margin-top:10%;
+            text-align: center;
+        }
+		.info-container {
+			padding:8px;
+			background:#eee;
+			border:1px solid #ddd;
+			color:white;
+			position:fixed;
+			z-index: 9999999;
+			top:0;
+			right:0;
+			display:none;
+	    }
+		.info-about {
+		  margin:10px;
+		  position:fixed;
+		  z-index:999999;
+		  top:0;
+		  right:0;
+		  width:30px;
+		  height:30px;
+		  border: 1px solid #fff;
+		  border-radius: 150%;
+		  text-align:center;
+		  vertical-align:center;
+		}
+    </style>
+</head>
+<body>
+    <div class='container' align='center'>
+        <h1 class='logo'>
+		<img style='width:40%;height:auto;' src='https://i.imgur.com/pNyTIUW.png'></img><br>
+		Хуютник
+		</h1>
+    </div>
+	<div class='info-container'>
+	  <div style='color:black;'>Icons made by Freepik from <a style='color:black;' href="http://www.flaticon.com" title="Flaticon">www.flaticon.com</a>         is licensed by <a style='color:black;' href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0">CC BY 3.0</a></div>
+	</div>
+	<span class='info-about'>?</span>
+</body>
+</html>
